@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+  <groupId>com.chenlb.mmseg4j</groupId>
+  <artifactId>mmseg4j-core</artifactId>
+  <name>mmseg4j-core</name>
+  <url>https://github.com/chenlb/mmseg4j-core</url>
+  <description>MMSEG cor for java chinese analyzer</description>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <organization>
+  	<url>http://blog.chenlb.com</url>
+  	<name>chenlb open source</name>
+  </organization>
+  <scm>
+  	<url>git@github.com:chenlb/mmseg4j-core.git</url>
+  	<developerConnection>scm:git:git@github.com:chenlb/mmseg4j-core.git</developerConnection>
+  	<connection>scm:git:git@github.com:chenlb/mmseg4j-core.git</connection>
+  </scm>
+  <developers>
+  	<developer>
+  		<id>chenlb</id>
+  		<name>LinBin Chen</name>
+  		<email>chenlb2008@gmail.com</email>
+  	</developer>
+  </developers>
+  <issueManagement>
+  	<url>https://github.com/chenlb/mmseg4j-core/issues</url>
+  	<system>github.com</system>
+  </issueManagement>
+  <dependencies>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.8</version>
+		<scope>test</scope>
+	</dependency>
+  </dependencies>
+
+  <build>
+	<plugins>
+		<plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-compiler-plugin</artifactId>
+		  <version>2.3.1</version>
+		  <configuration>
+		    <source>1.6</source>
+		    <target>1.6</target>
+		    <encoding>UTF-8</encoding>
+		  </configuration>
+		</plugin>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-gpg-plugin</artifactId>
+			<executions>
+				<execution>
+					<id>sign-artifacts</id>
+					<phase>verify</phase>
+					<goals>
+						<goal>sign</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+  </build>
+  <version>1.10.0</version>
+</project>
